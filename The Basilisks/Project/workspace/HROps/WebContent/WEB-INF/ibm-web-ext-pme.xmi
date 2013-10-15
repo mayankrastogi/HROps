@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmeext:PMEWebAppExtension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:pmeext="http://www.ibm.com/websphere/appserver/schemas/5.0/pmeext.xmi" xmi:id="PMEWebAppExtension_1360332433971">
+  <i18nWebAppExtension xmi:id="I18NWebAppExtension_1360332434020">
+    <webAppExtension href="WEB-INF/ibm-web-ext.xmi#WebAppExtension_1359951381625"/>
+  </i18nWebAppExtension>
+</pmeext:PMEWebAppExtension>

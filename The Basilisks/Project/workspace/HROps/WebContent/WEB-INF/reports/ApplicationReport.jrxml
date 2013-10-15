@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Leaf Green" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3fbe430e-d399-4c00-a5f3-97fae3e0bdbf">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="HROPS"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<subDataset name="PieChart" uuid="5cbca8a6-e605-4ee4-8549-83ad86cc2e4c">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="HROPS"/>
+		<queryString>
+			<![CDATA[SELECT COUNT(STATUS) AS "No. of Applications",CASE STATUS WHEN 0 THEN 'Unread' WHEN 1 THEN 'Shortlisted' WHEN 2 THEN 'Rejected in Shortlisting' WHEN 3 THEN 'Selected' WHEN 4 THEN 'Rejected in Selection' WHEN 5 THEN 'Offer Sent' WHEN 6 THEN 'Offer Accepted' WHEN 7 THEN 'Offer Rejected' ELSE 'Unknown' END AS "Status" FROM HROPS_SCHEMA."APPLICATION" GROUP BY STATUS]]>
+		</queryString>
+		<field name="No. of Applications" class="java.lang.Integer"/>
+		<field name="Status" class="java.lang.String"/>
+	</subDataset>
+	<queryString>
+		<![CDATA[SELECT  APPLICATION_ID AS "Application ID",EMAIL AS "E-Mail ID",OPPORTUNITY_ID AS "Job Opportunity",APPLICATION_DATE AS "Application Date",CASE STATUS WHEN 0 THEN 'Unread' WHEN 1 THEN 'Shortlisted' WHEN 2 THEN 'Rejected in Shortlisting' WHEN 3 THEN 'Selected' WHEN 4 THEN 'Rejected in Selection' WHEN 5 THEN 'Offer Sent' WHEN 6 THEN 'Offer Accepted' WHEN 7 THEN 'Offer Rejected' ELSE 'Unknown' END AS "Status" FROM HROPS_SCHEMA."APPLICATION"]]>
+	</queryString>
+	<field name="Application ID" class="java.lang.Integer"/>
+	<field name="E-Mail ID" class="java.lang.String"/>
+	<field name="Job Opportunity" class="java.lang.String"/>
+	<field name="Application Date" class="java.sql.Date"/>
+	<field name="Status" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="a055d1f8-4677-45c1-abb2-c234965010e5" style="Title" x="0" y="13" width="263" height="33"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[THE BASILISKS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e1c09797-5e8d-4a7e-a0e4-0d7bd5e82d73" style="SubTitle" x="100" y="46" width="220" height="22"/>
+				<textElement/>
+				<text><![CDATA[Application Status Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d9c22370-73e8-43d6-8ad3-a66cfdfa551e" style="Title" x="222" y="13" width="331" height="33"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[HR Operations Manager]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement uuid="117c0d06-23c5-47da-b8e6-18338038a102" positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="8319d109-fcfc-4bb5-8158-5cfd77b84088" style="Column header" x="0" y="19" width="111" height="15"/>
+				<textElement/>
+				<text><![CDATA[Application ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d1016c0b-e3fa-493f-85b4-055c604f090d" style="Column header" x="111" y="19" width="111" height="15"/>
+				<textElement/>
+				<text><![CDATA[E-Mail ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b413e3e0-7845-4e18-b08a-726956864d55" style="Column header" x="222" y="19" width="111" height="15"/>
+				<textElement/>
+				<text><![CDATA[Job Opportunity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d8bd5191-a88a-4ad9-8812-f7741afc66b6" style="Column header" x="333" y="19" width="111" height="15"/>
+				<textElement/>
+				<text><![CDATA[Application Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cbf071a1-1d99-4feb-9ceb-1d05556ad6c0" style="Column header" x="444" y="19" width="111" height="15"/>
+				<textElement/>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement uuid="c7459d0e-e9a5-443a-a6fe-fcfb5a337ef4" positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement uuid="f8ca2899-7e22-4bc5-8ebb-4b2394ab4564" style="Detail" x="0" y="0" width="111" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Application ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d2b8a432-bc3d-4940-8704-161f539838b7" style="Detail" x="111" y="0" width="111" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{E-Mail ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9c6d4125-b13d-4fde-b7d5-a4f62fc956a7" style="Detail" x="222" y="0" width="111" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Job Opportunity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="46ddb08a-9c48-42e6-b0ae-28b34cc3dd6e" style="Detail" x="333" y="0" width="111" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Application Date}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="95f6f48a-52c8-4847-95bd-6b122ba22f22" style="Detail" x="444" y="0" width="111" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Status}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement uuid="ce46d76b-1d8e-4693-863c-79a35a19eba7" positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="3588d974-90b8-4b74-ba14-d2447f62cd5c" style="Column header" x="433" y="0" width="80" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="cfc9b7b7-87cb-4cbe-98f3-78b5669261a8" style="Column header" x="513" y="0" width="40" height="20"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="8077029a-53d8-49e7-97af-f4183b0974a1" style="Column header" x="0" y="0" width="197" height="20"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="400" splitType="Stretch">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<pieChart>
+				<chart evaluationTime="Report">
+					<reportElement uuid="6dd957ae-e7cc-42b3-b10b-2913aabae599" x="0" y="0" width="555" height="400"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<pieDataset maxCount="8">
+					<dataset>
+						<datasetRun subDataset="PieChart" uuid="bf6420bf-4408-4a74-86e2-54d9570487dc"/>
+					</dataset>
+					<keyExpression><![CDATA[$F{Status}]]></keyExpression>
+					<valueExpression><![CDATA[$F{No. of Applications}]]></valueExpression>
+					<labelExpression><![CDATA[$F{Status}]]></labelExpression>
+				</pieDataset>
+				<piePlot>
+					<plot/>
+					<itemLabel/>
+				</piePlot>
+			</pieChart>
+		</band>
+	</summary>
+</jasperReport>

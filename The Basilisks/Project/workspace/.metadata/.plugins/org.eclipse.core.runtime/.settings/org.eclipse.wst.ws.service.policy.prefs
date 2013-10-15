@@ -1,0 +1,12 @@
+#Wed Apr 08 02:04:33 IST 2009
+com.ibm.ast.ws.policy.ui.qos.client.named.binding.sample.policyPath=/bindings/Client sample/bindingDefinition.xml
+com.ibm.ast.ws.policy.ui.qos.UsernameWSSecuritydefault.v70.policyPath=/PolicySets/Username WSSecurity default/policySet.xml
+org.eclipse.wst.ws.service.policy.ui.servicepols.wsiprofilecomp.wsiap.defaultProtocol=http\://schemas.xmlsoap.org/wsdl/soap/
+com.ibm.ast.ws.policy.ui.qos.default.system.policyPath=/PolicySets/SystemWSSecurityDefault/policySet.xml
+com.ibm.ast.ws.policy.ui.qos.WSHTTPSdefault.v70.policyPath=/PolicySets/WSHTTPS default/policySet.xml
+com.ibm.ast.ws.policy.ui.qos.WSIRSP.v70.policyPath=/PolicySets/WS-I RSP/policySet.xml
+org.eclipse.wst.ws.service.policy.ui.servicepols.wsiprofilecomp.wsibp12.defaultProtocol=http\://schemas.xmlsoap.org/wsdl/soap/
+org.eclipse.wst.ws.service.policy.ui.servicepols.wsiprofilecomp.wsissbp.defaultProtocol=http\://schemas.xmlsoap.org/wsdl/soap/
+eclipse.preferences.version=1
+com.ibm.ast.ws.policy.ui.qos.server.named.binding.sample.policyPath=/bindings/Provider sample/bindingDefinition.xml
+org.eclipse.wst.ws.service.policy.ui.servicepols.wsiprofilecomp.wsibp20.defaultProtocol=http\://schemas.xmlsoap.org/wsdl/soap12/

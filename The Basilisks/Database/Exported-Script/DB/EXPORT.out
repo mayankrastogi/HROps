@@ -1,0 +1,25 @@
+
+*****  DB2MOVE  *****
+
+Action:  EXPORT
+
+Start time:  Wed Apr 10 03:07:40 2013
+
+
+Connecting to database HROPS ... successful!  Server : DB2 Common Server V9.7.4
+
+EXPORT:      7 rows from table "HROPS_SCHEMA"."APPLICATION"
+EXPORT:      6 rows from table "HROPS_SCHEMA"."ATTENDANCE"
+EXPORT:      4 rows from table "HROPS_SCHEMA"."DEPARTMENT"
+EXPORT:      6 rows from table "HROPS_SCHEMA"."EMPLOYEE"
+EXPORT:    141 rows from table "SYSTOOLS"."HMON_ATM_INFO"
+EXPORT:      0 rows from table "SYSTOOLS"."HMON_COLLECTION"
+EXPORT:      2 rows from table "HROPS_SCHEMA"."JOB_OPPORTUNITY"
+EXPORT:      2 rows from table "HROPS_SCHEMA"."LEAVE"
+EXPORT:      5 rows from table "SYSTOOLS"."POLICY"
+EXPORT:      5 rows from table "HROPS_SCHEMA"."POSITION"
+EXPORT:      5 rows from table "HROPS_SCHEMA"."QUALIFICATION"
+
+Disconnecting from database ... successful!
+
+End time:  Wed Apr 10 03:07:43 2013

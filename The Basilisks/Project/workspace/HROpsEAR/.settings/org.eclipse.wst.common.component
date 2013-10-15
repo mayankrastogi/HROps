@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="HROpsEAR">
+        <wb-resource deploy-path="/" source-path="/"/>
+        <dependent-module deploy-path="/" handle="module:/resource/HROps/HROps">
+            <dependent-object>WebModule_1359951381133</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="db2jcc.jar" deploy-path="/" handle="module:/classpath/lib/db2jcc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="db2jcc_license_cisuz.jar" deploy-path="/" handle="module:/classpath/lib/db2jcc_license_cisuz.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="db2jcc_license_cu.jar" deploy-path="/" handle="module:/classpath/lib/db2jcc_license_cu.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="true" key="com.ibm.ws.ast.st.enhanced.ear.ui.internal.editor.SecuritySectionCommon"/>
+	<item value="false" key="com.ibm.etools.common.ui.sections.SectionUsageTableCommon"/>
+	<item value="true" key="com.ibm.ws.ast.st.enhanced.ear.ui.internal.editor.LibrarySectionCommon"/>
+	<item value="false" key="com.ibm.etools.application.presentation.ApplicationGeneralInfoSectionCommon"/>
+	<item value="false" key="com.ibm.etools.application.ui.ws.ext.SectionWSApplicationExtensionCommon"/>
+	<item value="false" key="com.ibm.ws.ast.st.enhanced.ear.ui.internal.editor.VariablesSectionCommon"/>
+	<item value="false" key="com.ibm.etools.application.ui.ws.ext.SectionGroupTableCommon"/>
+	<item value="true" key="com.ibm.ws.ast.st.enhanced.ear.ui.internal.editor.VirtualHostSectionCommon"/>
+	<item value="false" key="com.ibm.etools.emf.workbench.ui.custom.widgets.SectionDynamicTableCommon"/>
+	<item value="false" key="com.ibm.etools.web.ui.ws.ext.presentation.sections.VirtualHostNameSectionCommon"/>
+	<item value="false" key="com.ibm.etools.common.ui.sections.SectionIconsCommon"/>
+	<item value="false" key="com.ibm.etools.application.presentation.SectionSecurityTableCommon"/>
+	<item value="false" key="com.ibm.ws.ast.st.enhanced.ear.ui.internal.editor.AppDeploymentSectionCommon"/>
+	<item value="false" key="com.ibm.etools.web.ui.ws.ext.presentation.sections.SectionOverviewBindingsCommon"/>
+	<item value="false" key="com.ibm.ws.ast.st.enhanced.ear.ui.internal.editor.DataSourceSectionCommon"/>
+	<item value="true" key="com.ibm.ws.ast.st.enhanced.ear.ui.internal.editor.J2CEmbeddedSectionCommon"/>
+	<item value="false" key="com.ibm.etools.application.presentation.SectionSecurityDetailCommon"/>
+	<item value="false" key="com.ibm.etools.application.ui.ws.ext.SectionWSApplicationBindingsCommon"/>
+	<item value="false" key="com.ibm.etools.web.ui.sections.WebGeneralInfoSectionCommon"/>
+	<item value="false" key="com.ibm.etools.application.ui.ws.ext.SectionUserTableCommon"/>
+	<item value="false" key="com.ibm.etools.application.ui.ws.ext.SectionRunAsBindingsTableCommon"/>
+</section>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connections:connections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connections="http://www.ibm.com/websphere/wdo/connections">
+  <connection id="HROPS">
+    <development xsi:type="connections:rsc-live-connection" id="HROPS_dev" name="HROPS"/>
+    <runtime xsi:type="connections:datasource-connection" auto-deploy="true" class-location="${DB2_JCC_DRIVER_PATH}/db2jcc.jar;${DB2_JCC_DRIVER_PATH}/db2jcc_license_cisuz.jar" id="HROPS_runtime" classname="com.ibm.db2.jcc.DB2ConnectionPoolDataSource" database-name="HROPS" jndi-name="jdbc/HROPS" port-number="50000" resource-reference-name="HROPS" server-name="localhost" sql-vendor-type="49" userid="db2admin"/>
+  </connection>
+</connections:connections>

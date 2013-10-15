@@ -1,0 +1,9 @@
+#Tue Mar 05 20:22:28 IST 2013
+DELEGATES_PREFERENCE=delegateValidatorList
+USER_MANUAL_PREFERENCE=enabledManualValidatorListorg.eclipse.wst.wsi.ui.internal.WSIMessageValidator;com.businessobjects.crystalreports.integration.eclipse.wtp.CrystalReportsValidator;org.eclipse.wst.common.componentcore.internal.ModuleCoreValidator;com.ibm.etools.webtools.sdo.jdbc.ui.validators.JDBCMediatorConnectionFileValidator;
+eclipse.preferences.version=1
+override=false
+USER_BUILD_PREFERENCE=enabledBuildValidatorListorg.eclipse.wst.wsi.ui.internal.WSIMessageValidator;com.businessobjects.crystalreports.integration.eclipse.wtp.CrystalReportsValidator;org.eclipse.wst.common.componentcore.internal.ModuleCoreValidator;com.ibm.etools.webtools.sdo.jdbc.ui.validators.JDBCMediatorConnectionFileValidator;
+suspend=false
+vf.version=3
+USER_PREFERENCE=overrideGlobalPreferencesfalse
