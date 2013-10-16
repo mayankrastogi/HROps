@@ -6,7 +6,7 @@ HR Operations Manager
 
 Installation Instructions
 -------------------------
-
+<pre>
 
 1. Install RAD 7.5 on the system.
 2. Be sure that you have checked "WAS 7.0 environment" option during installation of RAD 7.5
@@ -72,10 +72,10 @@ HROps > WebContent > WEB-INF > config
 18. The application is now ready to use. Refer to user manual for learn how to use the software.
 
 
-
+</pre>
 Default users and their passwords
 ---------------------------------
-
+<pre>
 Role               Employee-ID               Password
 ----               -----------               --------
 
@@ -84,3 +84,4 @@ HR                 26                        hr
 MANAGER            27                        manager
 INTERVIEWER        29                        interviewer
 
+</pre>
